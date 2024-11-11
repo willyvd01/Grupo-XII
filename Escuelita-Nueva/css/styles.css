@@ -1,0 +1,113 @@
+/* css/styles.css */
+
+/* Variables de color para un diseño angelical y minimalista */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #50C9C3;
+    --text-color: #333;
+    --bg-gradient-start: #E8F9FD;
+    --bg-gradient-end: #A1C4FD;
+    --footer-color: #333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, var(--bg-gradient-start), var(--bg-gradient-end));
+    color: var(--text-color);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+header h1 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+header .subtitle {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Sección de Bienvenida */
+#bienvenida {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+#bienvenida h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#bienvenida p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Sección de Contacto */
+#contacto {
+    background-color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+}
+
+#contacto h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: relative;
+}
